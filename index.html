@@ -86,7 +86,7 @@
             <!-- Modal Header -->
             <div class="bg-gradient-to-r from-brand-800 to-brand-900 p-5 flex items-center gap-3 text-white">
                 <div class="p-2 bg-white/20 rounded-xl text-gold-400 backdrop-blur-sm">
-                    <i data-lucide="file-text" class="w-6 h-6"></i>
+                    <i data-lucide="bell-ring" class="w-6 h-6"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold font-['Prompt']">แนวปฏิบัติการเข้าสอบวัดผลกลางภาคเรียน</h3>
@@ -138,7 +138,7 @@
 
             <!-- Modal Footer -->
             <div class="p-5 bg-white border-t border-slate-200">
-                <button onclick="acceptGuidelines()" class="w-full py-4 bg-brand-700 hover:bg-brand-800 text-white rounded-xl font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-brand-700/30">
+                <button onclick="acceptGuidelines()" class="w-full py-4 bg-brand-700 hover:bg-brand-800 text-white rounded-xl font-bold text-base transition-colors flex items-center justify-center gap-2 shadow-lg shadow-brand-700/30">
                     <i data-lucide="check-circle" class="w-6 h-6"></i>
                     ข้าพเจ้าอ่านและรับทราบแนวปฏิบัติแล้ว
                 </button>
@@ -282,9 +282,16 @@
 
     </main>
 
-    <!-- ฟุตเตอร์เครดิตด้านล่างสุด -->
-    <footer class="mt-8 pb-8 text-center text-sm text-slate-400 px-4">
-        <p>© โรงเรียนเมืองมหาวิชานุกูล • ภาคเรียนที่ ๑ ปีการศึกษา ๒๕๖๙</p>
+<!-- ฟุตเตอร์เครดิตด้านล่างสุด -->
+    <footer class="mt-12 pb-8 text-center px-4 space-y-2">
+        <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm font-medium text-slate-500">
+            <span>© โรงเรียนเมืองมหาวิชานุกูล</span>
+            <span class="hidden sm:inline text-slate-300">•</span>
+            <span>ภาคเรียนที่ ๑ ปีการศึกษา ๒๕๖๙</span>
+        </div>
+        <p class="text-xs tracking-wide text-slate-400/80 uppercase">
+            Developed by <span class="text-indigo-500 font-semibold">ชุมนุม Film</span> | สงวนลิขสิทธิ์ทุกประการ
+        </p>
     </footer>
 
     <!-- ส่วน Script ข้อมูลตารางสอบ -->
@@ -335,7 +342,7 @@
                 title: "ตารางสอบประจำชั้นมัธยมศึกษาปีที่ ๓",
                 day1: [
                     { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "ค๒๓๑๐๑", subject: "คณิตศาสตร์พื้นฐาน", type: "exam" },
-                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "-", subject: "ภาษาอังกฤษ", type: "exam" },
+                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "อ๒๓๑๐๑", subject: "ภาษาอังกฤษ", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
                     { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "ท๒๓๑๐๑", subject: "ภาษาไทย", type: "exam" },
                     { time: "11.30 น. - 13.00 น.", min: "90 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" },
@@ -345,7 +352,7 @@
                 ],
                 day2: [
                     { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "ว๒๓๑๐๑", subject: "วิทยาศาสตร์ ๑", type: "exam" },
-                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "-", subject: "ศิลปะ (ทัศนศิลป์)", type: "exam" },
+                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "ศ๒๓๑๐๑", subject: "ศิลปะ (ทัศนศิลป์)", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
                     { time: "10.30 น. - 11.00 น.", min: "30 นาที", code: "ง๒๓๑๐๑", subject: "การงานอาชีพ ๑", type: "exam" },
                     { time: "11.00 น. - 12.00 น.", min: "60 นาที", code: "๒๓๑๐๑", subject: "สังคมศึกษา", type: "exam" }
@@ -354,22 +361,22 @@
             4: {
                 title: "ตารางสอบประจำชั้นมัธยมศึกษาปีที่ ๔",
                 day1: [
-                    { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "ค", subject: "คณิตศาสตร์พื้นฐาน", type: "exam" },
+                    { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "ค๓๑๑๐๑", subject: "คณิตศาสตร์พื้นฐาน", type: "exam" },
                     { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "อ๓๑๑๐๑", subject: "ภาษาอังกฤษ", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
-                    { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "วิ๓๑๒๒๑", subject: "เคมี ๑", type: "exam" },
+                    { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "ว๓๑๒๒๑", subject: "เคมี ๑", type: "exam" },
                     { time: "11.30 น. - 13.00 น.", min: "90 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" },
                     { time: "13.00 น. - 14.00 น.", min: "60 นาที", code: "ท๓๑๑๐๑", subject: "ภาษาไทย", type: "exam" },
-                    { time: "14.00 น. - 14.30 น.", min: "30 นาที", code: "วิ๓๑๑๗๑", subject: "วิทยาการคำนวณ", type: "exam" },
+                    { time: "14.00 น. - 14.30 น.", min: "30 นาที", code: "ว๓๑๑๗๑", subject: "วิทยาการคำนวณ", type: "exam" },
                     { time: "14.30 น. - 15.00 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
-                    { time: "15.00 น. - 15.30 น.", min: "30 นาที", code: "วิ๓๑๒๔๑", subject: "ชีววิทยา ๑", type: "exam" }
+                    { time: "15.00 น. - 15.30 น.", min: "30 นาที", code: "ว๓๑๒๔๑", subject: "ชีววิทยา ๑", type: "exam" }
                 ],
                 day2: [
-                    { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "วิ๓๑๑๐๑", subject: "วิทยาศาสตร์ชีวภาพ", type: "exam" },
+                    { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "ว๓๑๑๐๑", subject: "วิทยาศาสตร์ชีวภาพ", type: "exam" },
                     { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "ส๓๑๑๐๓", subject: "ประวัติศาสตร์ไทย", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
                     { time: "10.30 น. - 11.00 น.", min: "30 นาที", code: "ศ๓๑๑๐๑", subject: "ศิลปะ", type: "exam" },
-                    { time: "11.00 น. - 11.30 น.", min: "30 นาที", code: "-", subject: "การงานอาชีพ", type: "exam" },
+                    { time: "11.00 น. - 11.30 น.", min: "30 นาที", code: "ง๓๑๑๐๑", subject: "การงานอาชีพ", type: "exam" },
                     { time: "11.30 น. - 13.00 น.", min: "90 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" },
                     { time: "13.00 น. - 13.30 น.", min: "30 นาที", code: "ส๓๑๑๐๑", subject: "สังคมศึกษา", type: "exam" },
                     { time: "13.30 น. - 14.00 น.", min: "30 นาที", code: "พ๓๒๑๐๑", subject: "สุขศึกษาและพลศึกษา", type: "exam" }
@@ -379,24 +386,24 @@
                 title: "ตารางสอบประจำชั้นมัธยมศึกษาปีที่ ๕",
                 day1: [
                     { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "๓๒๑๐๑", subject: "คณิตศาสตร์พื้นฐาน", type: "exam" },
-                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "-", subject: "ภาษาอังกฤษ", type: "exam" },
+                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "อ๓๒๑๐๑", subject: "ภาษาอังกฤษ", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
                     { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "วิ๓๒๒๒๓", subject: "เคมี ๓", type: "exam" },
                     { time: "11.30 น. - 13.00 น.", min: "90 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" },
                     { time: "13.00 น. - 14.00 น.", min: "60 นาที", code: "๓๒๑๐๑", subject: "ภาษาไทย", type: "exam" },
                     { time: "14.00 น. - 14.30 น.", min: "30 นาที", code: "๓๒๑๗๑", subject: "การออกแบบและเทคโนโลยี", type: "exam" },
                     { time: "14.30 น. - 15.00 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
-                    { time: "15.00 น. - 15.30 น.", min: "30 นาที", code: "-", subject: "ชีววิทยา ๓", type: "exam" }
+                    { time: "15.00 น. - 15.30 น.", min: "30 นาที", code: "ว๓๒๒๔๓", subject: "ชีววิทยา ๓", type: "exam" }
                 ],
                 day2: [
                     { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "วิ๓๒๑๐๑", subject: "วิทยาศาสตร์กายภาพ", type: "exam" },
                     { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "๓๒๑๐๓", subject: "ประวัติศาสตร์สากล", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
-                    { time: "10.30 น. - 11.00 น.", min: "30 นาที", code: "-", subject: "ศิลปะ (นาฏศิลป์)", type: "exam" },
+                    { time: "10.30 น. - 11.00 น.", min: "30 นาที", code: "ศ๓๒๑๐๑", subject: "ศิลปะ (นาฏศิลป์)", type: "exam" },
                     { time: "11.00 น. - 11.30 น.", min: "30 นาที", code: "ง๓๒๑๐๑", subject: "การงานอาชีพ", type: "exam" },
                     { time: "11.30 น. - 13.00 น.", min: "90 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" },
                     { time: "13.00 น. - 13.30 น.", min: "30 นาที", code: "๓๒๑๐๑", subject: "สังคมศึกษา", type: "exam" },
-                    { time: "13.30 น. - 14.00 น.", min: "30 นาที", code: "พ", subject: "สุขศึกษาและพลศึกษา", type: "exam" }
+                    { time: "13.30 น. - 14.00 น.", min: "30 นาที", code: "พ๓๒๑๐๑", subject: "สุขศึกษาและพลศึกษา", type: "exam" }
                 ]
             },
             6: {
@@ -411,9 +418,9 @@
                 ],
                 day2: [
                     { time: "08.30 น. - 09.30 น.", min: "60 นาที", code: "๓๓๒๒๕", subject: "เคมี ๕", type: "exam" },
-                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "-", subject: "สุขศึกษาและพลศึกษา", type: "exam" },
+                    { time: "09.30 น. - 10.00 น.", min: "30 นาที", code: "พ๓๓๑๐๑", subject: "สุขศึกษาและพลศึกษา", type: "exam" },
                     { time: "10.00 น. - 10.30 น.", min: "30 นาที", code: "-", subject: "พักระหว่างคาบ", type: "break" },
-                    { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "-", subject: "สังคมศึกษา", type: "exam" },
+                    { time: "10.30 น. - 11.30 น.", min: "60 นาที", code: "ส๓๓๑๐๑", subject: "สังคมศึกษา", type: "exam" },
                     { time: "11.30 น. - 12.00 น.", min: "30 นาที", code: "๓๓๑๐๓", subject: "ศิลปะ (ดนตรี)", type: "exam" },
                     { time: "12.00 น. - 13.00 น.", min: "60 นาที", code: "-", subject: "พักรับประทานอาหารกลางวัน", type: "break" }
                 ]
